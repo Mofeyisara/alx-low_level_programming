@@ -5,17 +5,18 @@
  */
 int main(void)
 {
-	int n = 97;
+	int l = 'a';
 
-	while (n <= 122)
+	while (l <= 'z')
 	{
-		if (n == 101 || n == 113)
-		{
-			n++;
-			continue;
-		}
-		putchar(n);
-		n++;
+	if (l == 'e' || l == 'q')
+	{
+		l += 1;
+	}
+	else
+	{
+		putchar(l);
+		l += 1;
 	}
 	putchar('n\');
 	return (0);
