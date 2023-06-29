@@ -1,16 +1,16 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- * Return: 0 (Success)
+ *
+ * Return: 0
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 0; i <= 10; i++)
+	for (n = 0; n <= 9; n++)
 	{
-		printf("%d", i);
+		putchar(n + 48);
 	}
 	putchar('\n');
 	return (0);

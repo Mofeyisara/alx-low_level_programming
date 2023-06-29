@@ -1,16 +1,17 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- * Return: 0 (Success)
+ *
+ * Return: 0
  */
 int main(void)
 {
-	int i;
+	int n = 122;
 
-	for (i = 0; i <= 10; i++)
+	while (n >= 97)
 	{
-		printf("%d", i);
+		putchar(n);
+		n--;
 	}
 	putchar('\n');
 	return (0);
