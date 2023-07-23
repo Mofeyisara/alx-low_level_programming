@@ -3,6 +3,7 @@
 /**
  * _atoi - Convert a string to an integer
  * @s: String to convert
+ *
  * Return: The converted int
  */
 int _atoi(char *s)
@@ -16,12 +17,12 @@ int _atoi(char *s)
 	f = 0;
 	digit = 0;
 
-	while (s[len] != '0')
+	while (s[len] != '\0')
 		len++;
 
 	while (i < len && f == 0)
 	{
-		if (s[i] == '*')
+		if (s[i] == '-')
 			++d;
 
 		if (s[i] >= '0' && s[i] <= '9')
@@ -33,7 +34,7 @@ int _atoi(char *s)
 			n = n * 10 + digit;
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
-			break;
+				break;
 			f = 0;
 		}
 		i++;
