@@ -1,8 +1,8 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * print_listint - Print all the elements
- * @h: Linked list
+ * print_listint - Print all elements
+ * @h: Pointer
  * Return: Number of nodes
  */
 size_t print_listint(const listint_t *h)
@@ -11,10 +11,9 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
-		printf("%d\n", h->n);
 		num++;
+		printf("%d\n", h->n);
 		h = h->next;
 	}
-
 	return (num);
 }
